@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+ 
+     <!-- STYLE FILES -->
+         <!-- JavaScript for Icons from FontAwesome -->
+         <script src="https://kit.fontawesome.com/1228d6a68f.js" crossorigin="anonymous"></script>
+         <!-- Bootstrap -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" 
+         rel="stylesheet" 
+         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" 
+         crossorigin="anonymous">
+         <!-- Personal Style -->
+         <link rel="stylesheet" href="./assets/css/style.css" />
+ 
+     <!-- Title -->
+     <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+     <!-- HEADER SECTION -->
+     <header class="jumbotron">
+         <h1 class="display-3">Work Day Scheduler</h1>
+         <p class="lead">A simple calendar app for scheduling your work day</p>
+         <!-- Currect Day and Time Section -->
+         <p id="currentDay" class="lead"></p>
+         <p id="currentTime" class="lead"></p>
+     </header>
+ 
+     <!-- PALNNER SECTION -->
+     <div class="container">
+         <!-- Timeblocks go here -->
+         <!-- 8 AM -->
+         <div class="row time-block" id="8am">
+             <div class="col-1 hour">8AM</div>
+             <textarea class="col-10 description"></textarea>
+             <button class="col-1 saveBtn"></button>
+         </div>
+         <!-- 9 AM -->
+         <div class="row time-block" id="9am">
+            <div class="col-1 hour">9AM</div>
+            <textarea class="col-10 description"></textarea>
+            <button class="col-1 saveBtn"></button>
+        </div>
+         <!-- 10 AM -->
+         <div class="row time-block" id="10am">
+            <div class="col-1 hour">10AM</div>
+            <textarea class="col-10 description"></textarea>
+            <button class="col-1 saveBtn"></button>
+        </div>
+         <!-- 11 AM -->
+         <div class="row time-block" id="11am">
+            <div class="col-1 hour">11AM</div>
+            <textarea class="col-10 description"></textarea>
+            <button class="col-1 saveBtn"></button>
+        </div>
+         <!-- 12 PM -->
+         <div class="row time-block" id="12pm">
+            <div class="col-1 hour">12PM</div>
+            <textarea class="col-10 description"></textarea>
+            <button class="col-1 saveBtn"></button>
+        </div>
+        <!-- 1 PM -->
+        <div class="row time-block" id="1pm">
+           <div class="col-1 hour">1PM</div>
+           <textarea class="col-10 description"></textarea>
+           <button class="col-1 saveBtn"></button>
+       </div>
+        <!-- 2 PM -->
+        <div class="row time-block" id="2pm">
+           <div class="col-1 hour">2PM</div>
+           <textarea class="col-10 description"></textarea>
+           <button class="col-1 saveBtn"></button>
+       </div>
+        <!-- 3 PM -->
+        <div class="row time-block" id="3pm">
+           <div class="col-1 hour">3PM</div>
+           <textarea class="col-10 description"></textarea>
+           <button class="col-1 saveBtn"></button>
+       </div>
+        <!-- 4 PM -->
+        <div class="row time-block" id="4pm">
+            <div class="col-1 hour">4PM</div>
+            <textarea class="col-10 description"></textarea>
+            <button class="col-1 saveBtn"></button>
+        </div>
+         <!-- 5 PM -->
+         <div class="row time-block" id="5pm">
+            <div class="col-1 hour">5PM</div>
+            <textarea class="col-10 description"></textarea>
+            <button class="col-1 saveBtn"></button>
+        </div>
+
+     </div>
+
+     <!-- NOTES SECTION -->
+      <button class="btn btn-warning fixed-bottom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+        NotePad
+      </button>
+      
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Pad for Notes</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+          </div>
+   
+        </div>
+      </div>
+
+
+     <!-- JAVASCRIPT FILES -->
+         <!-- Current jQuery JS -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
+         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 
+         crossorigin="anonymous"></script>
+         <!-- Current Moment JS -->
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" 
+         integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" 
+         crossorigin="anonymous"></script>
+         <!-- Bootstrap JS -->
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" 
+         sintegrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" 
+         crossorigin="anonymous">
+        </script>
+         <!-- Personal JS -->
+         <script src="./assets/js/script.js"></script>
+  </body>
+</html>
