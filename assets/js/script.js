@@ -4,8 +4,10 @@
  var currentDay = moment().format("dddd, MMMM Do YYYY");
  $('#currentDay').text(currentDay);
 
- //Save Button
- var saveButton = $(".saveBtn")
+ // Buttons
+ var saveButton = $(".saveBtn");
+ var saveNotesButton = $(".saveNotesBtn");
+ var deleteNotesButton = $(".deleteNotesBtn");
 
 // List of all Functions
 
@@ -29,7 +31,7 @@
      })
  };
  
- // SAVE button on timeblock saves entered event into a local storage
+ // Save Button on timeblock saves entered event into a local storage
  saveButton.on("click", function() {
      var time = $(this).siblings(".hour").text();
      var information = $(this).siblings(".description").val();
@@ -54,3 +56,23 @@
 
 timeblockColor();
 savedEvents();
+
+// Extra bit - NOTEPAD
+
+  // Save Notes button 
+  saveNotesButton("click", function() {
+     var notesEntry = $(".notes").text();
+ 
+     localStorage.setItem(notesEntry);
+ });
+ 
+ // When refresh the page is refreshed, then the saved events persist
+ function savedNotes() {
+     var storedNotes = localStorage.getItem(notesEntry);
+     if(storedNotes !== null) {
+         $(".notes").text(storedNotes);
+    }
+ };
+
+
+ savedNotes();

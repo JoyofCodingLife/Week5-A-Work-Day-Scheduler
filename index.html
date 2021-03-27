@@ -34,68 +34,68 @@
          <!-- Timeblocks go here -->
          <!-- 8 AM -->
          <div class="row time-block" id="8am">
-             <div class="col-1 hour">8AM</div>
-             <textarea class="col-10 description"></textarea>
+             <div class="col-1 pt-1 hour">8AM</div>
+             <textarea class="col-10 description" placeholder="I need to get a cup of coffee..."></textarea>
              <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
          </div>
          <!-- 9 AM -->
          <div class="row time-block" id="9am">
-            <div class="col-1 hour">9AM</div>
-            <textarea class="col-10 description"></textarea>
+            <div class="col-1 pt-1 hour">9AM</div>
+            <textarea class="col-10 description" placeholder="I need to..."></textarea>
             <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
         </div>
          <!-- 10 AM -->
          <div class="row time-block" id="10am">
-            <div class="col-1 hour">10AM</div>
-            <textarea class="col-10 description"></textarea>
+            <div class="col-1 pt-1 hour">10AM</div>
+            <textarea class="col-10 description" placeholder="I need to..."></textarea>
             <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
         </div>
          <!-- 11 AM -->
          <div class="row time-block" id="11am">
-            <div class="col-1 hour">11AM</div>
-            <textarea class="col-10 description"></textarea>
+            <div class="col-1 pt-1 hour">11AM</div>
+            <textarea class="col-10 description" placeholder="I need to..."></textarea>
             <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
         </div>
          <!-- 12 PM -->
          <div class="row time-block" id="12pm">
-            <div class="col-1 hour">12PM</div>
-            <textarea class="col-10 description"></textarea>
+            <div class="col-1 pt-1 hour">12PM</div>
+            <textarea class="col-10 description" placeholder="I need to..."></textarea>
             <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
         </div>
         <!-- 1 PM -->
         <div class="row time-block" id="1pm">
-           <div class="col-1 hour">1PM</div>
-           <textarea class="col-10 description"></textarea>
+           <div class="col-1 pt-1 hour">1PM</div>
+           <textarea class="col-10 description" placeholder="I need to..."></textarea>
            <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
        </div>
         <!-- 2 PM -->
         <div class="row time-block" id="2pm">
-           <div class="col-1 hour">2PM</div>
-           <textarea class="col-10 description"></textarea>
+           <div class="col-1 pt-1 hour">2PM</div>
+           <textarea class="col-10 description" placeholder="I need to have some lunch..."></textarea>
            <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
        </div>
         <!-- 3 PM -->
         <div class="row time-block" id="3pm">
-           <div class="col-1 hour">3PM</div>
-           <textarea class="col-10 description"></textarea>
+           <div class="col-1 pt-1 hour">3PM</div>
+           <textarea class="col-10 description" placeholder="I need to..."></textarea>
            <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
        </div>
         <!-- 4 PM -->
         <div class="row time-block" id="4pm">
-            <div class="col-1 hour">4PM</div>
-            <textarea class="col-10 description"></textarea>
+            <div class="col-1 pt-1 hour">4PM</div>
+            <textarea class="col-10 description" placeholder="I need to..."></textarea>
             <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
         </div>
          <!-- 5 PM -->
          <div class="row time-block" id="5pm">
-            <div class="col-1 hour">5PM</div>
-            <textarea class="col-10 description"></textarea>
+            <div class="col-1 pt-1 hour">5PM</div>
+            <textarea class="col-10 description" placeholder="I need to..."></textarea>
             <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
         </div>
          <!-- 6 PM -->
          <div class="row time-block" id="6pm">
-          <div class="col-1 hour">6PM</div>
-          <textarea class="col-10 description"></textarea>
+          <div class="col-1 pt-1 hour">6PM</div>
+          <textarea class="col-10 description" placeholder="I need to finish up for today..."></textarea>
           <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
       </div>
      </div>
@@ -111,10 +111,15 @@
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <div>
-            Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+
+          <div class="card text-dark bg-warning mb-3" style="max-width: 20rem;">
+            <div class="card-body">
+              <textarea id="notes"></textarea>
+            </div>
+
           </div>
-   
+          <button class="saveNotesBtn">Save Notes</button>
+          <button class="deleteNotesBtn">Delete Notes</button>
         </div>
       </div>
 
