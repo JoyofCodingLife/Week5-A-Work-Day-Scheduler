@@ -20,13 +20,13 @@
          var currentHour = parseInt($(".time-block").attr("id"));  
          
          if (currentHour < hour) {
-             $(".time-block").addClass("past")
+             $(this).addClass("past")
          } else
          if (currentHour === hour) {
-             $(".time-block").addClass("present");
+             $(this).addClass("present");
          } else 
          if (currentHour > hour) {
-             $(".time-block").addClass("future");
+             $(this).addClass("future");
          }
      })
  };
@@ -56,23 +56,3 @@
 
 timeblockColor();
 savedEvents();
-
-// Extra bit - NOTEPAD
-
-  // Save Notes button 
-  saveNotesButton("click", function() {
-     var notesEntry = $(".notes").text();
- 
-     localStorage.setItem(notesEntry);
- });
- 
- // When refresh the page is refreshed, then the saved events persist
- function savedNotes() {
-     var storedNotes = localStorage.getItem(notesEntry);
-     if(storedNotes !== null) {
-         $(".notes").text(storedNotes);
-    }
- };
-
-
- savedNotes();
