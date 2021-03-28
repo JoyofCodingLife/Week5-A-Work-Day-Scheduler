@@ -8,6 +8,7 @@
  var saveButton = $(".saveBtn");
  var saveNotesButton = $(".saveNotesBtn");
  var deleteNotesButton = $(".deleteNotesBtn");
+ var clearButton = $("#clearBtn")
 
 // List of all Functions
 
@@ -15,21 +16,19 @@
  function timeblockColor() {
      var hour = moment().hours();
      
-     //
+     // Color Coding
      $(".time-block").each(function() {
          var currentHour = parseInt($(".time-block").attr("id"));  
          
-         if (currentHour < hour) {
-             $(this).addClass("past")
-         } else
          if (currentHour === hour) {
-             $(this).addClass("present");
-         } else 
-         if (currentHour > hour) {
-             $(this).addClass("future");
-         }
-     })
- };
+             $(".time-block").addClass("present");
+            } else 
+            if (currentHour > hour) {
+                $(".time-block").addClass("future");
+            } else {
+                $(".time-block").addClass("past");
+            }
+ })};
  
  // Save Button on timeblock saves entered event into a local storage
  saveButton.on("click", function() {
@@ -52,7 +51,14 @@
      });
  }
 
-// Invoke Functions
+ // Invoke Functions
+ timeblockColor();
+ savedEvents();
 
-timeblockColor();
-savedEvents();
+ //Clear All Button
+ clearButton.on("click", function() {
+     localStorage.clear();
+     $(".description").val("");
+ })
+
+
