@@ -1,5 +1,6 @@
 /* IMPORT OF FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Cinzel+Decorative:wght@900&family=Open+Sans&display=swap');
+
 /*
 StandOut
 font-family: 'Cinzel Decorative', cursive;
@@ -7,7 +8,6 @@ Normal
 font-family: 'Open Sans', sans-serif;
 Handwriting
 font-family: 'Caveat', cursive;
-
 */
 
 /* GLOBAL STYLE */
@@ -17,7 +17,7 @@ font-family: 'Caveat', cursive;
   --past: #d6cfc7;
   --present: #ef2648;
   --future: #a6deae;
-  }
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -112,7 +112,6 @@ textarea {
 }
 
 /* Clear Button */
-
 #clearBtn:hover {
   background-color: var(--present);
   font-weight: bold;
