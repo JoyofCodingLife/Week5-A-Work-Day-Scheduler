@@ -18,14 +18,14 @@
      
      // Color Coding
      $(".time-block").each(function() {
-         var currentHour = parseInt($(".time-block").attr("id"));  
+         var currentHour = parseInt($(this).attr("id"));  
       
       if (currentHour > hour) {
-       $(".time-block").addClass("future");
+       $(this).addClass("future");
       } else if (currentHour === hour) {
-       $(".time-block").addClass("present");
+       $(this).addClass("present");
       } else {
-       $(".time-block").addClass("past");
+       $(this).addClass("past");
       }
  })};
  
