@@ -86,8 +86,8 @@
             <textarea class="col-10 description" placeholder="I need to..."></textarea>
             <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
         </div>
-         <!-- 5 PM -->
-         <div class="row mb-2 time-block" id="17">
+        <!-- 5 PM -->
+        <div class="row mb-2 time-block" id="17">
             <div class="col-1 pt-1 hour">5 PM</div>
             <textarea class="col-10 description" placeholder="I need to finish up for today..."></textarea>
             <button class="col-1 saveBtn"><i class="far fa-save"></i></button>
@@ -101,28 +101,36 @@
      </div>
 
      <!-- NOTES SECTION -->
-      <button class="btn btn-warning fixed-right-bottom" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-        NotePad
+      <!-- Notes Side Button -->
+      <button class="btn btn-warning fixed-bottom-left btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" id="notesBtn">
+        <i class="far fa-clipboard"></i>
       </button>
-      
+      <!-- Notes Side Window -->
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
         <div class="offcanvas-header">
           <h5 class="offcanvas-title" id="offcanvasExampleLabel">Pad for Notes</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <!-- NotePad -->
         <div class="offcanvas-body">
-
           <div class="card text-dark bg-warning mb-3" style="max-width: 20rem;">
             <div class="card-body">
-              <textarea id="notes" placeholder="Things to remeber..."></textarea>
+              <textarea class="notes" placeholder="Things to remeber..."></textarea>
             </div>
+          </div>
         </div>
+
+        <!-- WIP -  Had to remove, need more work to be done, as something is slowing down the page and makes it glitch 
+        Buttons to Save abd Delete Notes
+        <button class="btn btn-outline-warning" type="button" id="saveNotesBtn">Save Notes</button>
+        <button class="btn btn-outline-danger" type="button" id="deleteNotesBtn">Delete Notes</button>
+        -->
+      </div>
+
       </div>
 
 
      <!-- JAVASCRIPT FILES -->
-         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
          <!-- Current jQuery JS -->
          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" 
          integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" 

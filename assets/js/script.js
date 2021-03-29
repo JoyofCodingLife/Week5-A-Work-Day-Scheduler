@@ -6,9 +6,9 @@
 
  // Buttons
  var saveButton = $(".saveBtn");
- var saveNotesButton = $(".saveNotesBtn");
- var deleteNotesButton = $(".deleteNotesBtn");
  var clearButton = $("#clearBtn")
+ var saveNotesButton = $("#saveNotesBtn");
+ var deleteNotesButton = $("#deleteNotesBtn");
 
 // List of all Functions
 
@@ -54,8 +54,26 @@
  timeblockColor();
  savedEvents();
 
+// EXTRA BITS
+
  //Clear All Button
  clearButton.on("click", function() {
      localStorage.clear();
      $(".description").val("");
- })
+ });
+
+  
+
+// WIP -  Had to remove, need more work to be done, as something is slowing down the page and makes it glitch
+
+ // Save Button for Notes to store on local storage
+ //  saveNotesButton.on("click", function() {var notesContent = $(".notes").val();localStorage.setItem("notesContent", notesContent);});
+
+ // Retrive saved Notes from local storage
+ //function savedNotes() {var notesContent = localStorage.getItem("notesContent"); $(".notes").value = notesContent;} 
+
+ // Delete Button for Notes
+ //deleteNotesButton.on("click", function() {localStorage.clear();$(".notes").val(""); })
+ 
+ // Invoke Function
+ //savedNotes();

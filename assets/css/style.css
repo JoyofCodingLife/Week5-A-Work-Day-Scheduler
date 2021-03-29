@@ -11,6 +11,14 @@ font-family: 'Caveat', cursive;
 */
 
 /* GLOBAL STYLE */
+:root {
+  --orange: #ffc105;
+  --blue: #06aed5;
+  --past: #d6cfc7;
+  --present: #ef2648;
+  --future: #a6deae;
+  }
+
 body {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
@@ -20,6 +28,7 @@ body {
 /* HEADER SECTION */
 #header, #currentDay {
   font-family: 'Cinzel Decorative', cursive;
+  word-spacing: 7px;
 }
 
 .jumbotron {
@@ -34,6 +43,7 @@ body {
 ::placeholder {
   font-family: 'Caveat', cursive;
   font-size: 22px;
+  color: #ffffff;
 }
 
 textarea {
@@ -68,17 +78,17 @@ textarea {
 
 /* Color coding timeblocks */
 .past {
-  background-color: #e3e2e2;
+  background-color: var(--past);
   color: white;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: var(--present);
   color: white;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: var(--future);
   color: white;
 }
 
@@ -87,27 +97,37 @@ textarea {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  background-color: #06aed5;
+  background-color: var(--blue);
   color: white;
 }
 
 .saveBtn i:hover {
-  font-size: 40px;
+  font-size: 30px;
   transition: all 0.1s ease-in-out;
   color: rgb(255, 255, 255);
 }
 
 .saveBtn:hover{
-  background-color: orange;
+  background-color: var(--orange);
 }
 
+/* Clear Button */
+
+#clearBtn:hover {
+  background-color: var(--present);
+  font-weight: bold;
+}
 
 /* NOTEPAD SECTION */
+#notesBtn:hover {
+  background-color: var(--blue);
+}
+
 .card-body {
   height: 500px;
 }
 
-#notes {
+.notes {
   font-size: 18px;
   line-height: 1.5rem;
   border-style: none;
