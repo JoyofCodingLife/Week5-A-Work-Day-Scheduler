@@ -19,15 +19,14 @@
      // Color Coding
      $(".time-block").each(function() {
          var currentHour = parseInt($(".time-block").attr("id"));  
-         
-         if (currentHour === hour) {
-             $(".time-block").addClass("present");
-            } else 
-            if (currentHour > hour) {
-                $(".time-block").addClass("future");
-            } else {
-                $(".time-block").addClass("past");
-            }
+      
+      if (currentHour > hour) {
+       $(".time-block").addClass("future");
+      } else if (currentHour === hour) {
+       $(".time-block").addClass("present");
+      } else {
+       $(".time-block").addClass("past");
+      }
  })};
  
  // Save Button on timeblock saves entered event into a local storage
@@ -60,5 +59,3 @@
      localStorage.clear();
      $(".description").val("");
  })
-
-
