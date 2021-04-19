@@ -25,7 +25,7 @@ And I changed color combinations from starter version in CSS to more visually co
 <br>
 
 ### Live URL
-https://joyofcodinglife.github.io/Week5-A-Work-Day-Scheduler/
+https://korolyovalara.github.io/Work-Day-Scheduler/
 
 <br>
 
