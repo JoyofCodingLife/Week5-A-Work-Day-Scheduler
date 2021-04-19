@@ -9,6 +9,11 @@
  var clearButton = $("#clearBtn")
  var saveNotesButton = $("#saveNotesBtn");
  var deleteNotesButton = $("#deleteNotesBtn");
+ var notesEntry = $("#notes")
+ var storageOfNotes = localStorage.getItem("notesStorage")
+ 
+ notesEntry.val(storageOfNotes)
+ //console.log(storageOfNotes)
 
 // List of all Functions
 
@@ -61,3 +66,10 @@
      localStorage.clear();
      $(".description").val("");
  });
+
+ // Save Notes Button
+ saveNotesButton.on("click", function(){
+     //console.log(notesEntry.val())
+     var notesToSave = notesEntry.val();
+     localStorage.setItem("notesStorage", notesToSave)
+ })
